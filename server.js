@@ -18,6 +18,8 @@ app.get('/api/quotes', (req, res, next) => {
         quotes: quotesByPerson
     })
    }
+
+   res.send({quotes: quotes})
 })
 
 app.post('/api/quotes', (req, res, next) => {
